@@ -10,7 +10,7 @@ export default function PageSection({
     url?: string
 }) {
     return (
-        <section id={id} className="h-lvh bg-cover bg-center flex grow w-full" style={{ backgroundImage: url }}>
+        <section id={id} className="h-lvh bg-cover bg-center flex grow w-full">
             {children}
         </section>
     )

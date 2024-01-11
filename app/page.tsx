@@ -1,31 +1,41 @@
-import PageSection from './components/page-section'
+import HomePage from './components/home'
+import Image from 'next/image'
+import layers2Image from './assets/Layers2.svg'
 import pageOneBg from './assets/01.jpg'
-import { Typography } from '@mui/material'
+import pageThreeBg from './assets/02.jpg'
+import About from './components/about'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <PageSection id='home' url={`url(${pageOneBg.src})`}>
-        <section id='header' className='flex flex-row grow justify-items-stretch w-full'>
-          <section id='logo' className='w-1/2'>Logo</section>
-          <section id='buttons' className='w-1/2 flex justify-end'>
-            <section className='w-1/4 flex justify-end'>Search</section>
-            <section className='w-1/4 flex justify-end'>Login</section>
-            <section className='w-1/4 flex justify-end hidden md:flex'>
-              <Typography>EN</Typography>
-            </section>
-            <section className='w-1/4 flex justify-end'>=</section>
+      <section 
+        id='home' 
+        className="h-lvh bg-cover bg-center flex grow w-full" 
+        style={{ backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url(${pageOneBg.src})`}}>
+        <HomePage />
+      </section>
+      <section id='about' className="h-lvh flex grow w-full">
+        <About />
+      </section>
+      <section 
+        id='featured' 
+        className="h-lvh bg-cover bg-center flex grow w-full"
+        style={{ backgroundImage: `radial-gradient(ellipse at 50% 35%, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2), rgba(0, 0, 0, .7), rgba(0, 0, 0, 1)), url(${pageThreeBg.src})`}}>
+          <section className='relative'>
+            <h1 className='absolute bottom-0 text-6xl'>Test 3</h1>
           </section>
-        </section>
-      </PageSection>
-      <PageSection id='about'>Test 2</PageSection>
-      <PageSection id='featured'>Test 3</PageSection>
-      <PageSection id='features'>Test 4</PageSection>
-      <section id='clients'></section>
-      <PageSection id='testimonials'>Test 5</PageSection>
-      <PageSection id='latestnews'>Test 6</PageSection>
-      <section id='igfeed'></section>
-      <PageSection id='contactus'>Test 7</PageSection>
+      </section>
+      <section id='features' className="h-lvh bg-cover bg-center flex grow w-full">       
+        <Image
+          src={layers2Image}
+          alt='layers2'
+        />
+      </section>
+      <section id='clients' className="h-lvh bg-cover bg-center flex grow w-full"></section>
+      <section id='testimonials' className="h-lvh bg-cover bg-center flex grow w-full">Test 5</section>
+      <section id='latestnews' className="h-lvh bg-cover bg-center flex grow w-full">Test 6</section>
+      <section id='igfeed' className="h-lvh bg-cover bg-center flex grow w-full"></section>
+      <section id='contactus' className="h-lvh bg-cover bg-center flex grow w-full">Test 7</section>
     </main>
   )
 }

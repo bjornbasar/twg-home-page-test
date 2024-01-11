@@ -1,0 +1,4 @@
+.button {
+    font-family: 'norwester', sans-serif;
+    color: rgb(var(--foreground-rgb));
+}
