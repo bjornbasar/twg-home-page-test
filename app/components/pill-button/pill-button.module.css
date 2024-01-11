@@ -2,5 +2,6 @@
     color: rgb(var(--foreground-rgb));
     padding: 0.5em 1em;
     border-radius: 9999px;
-    border-color: rgb(var(--foreground-rgb));;
+    border-color: rgb(var(--foreground-rgb));
+    height: inherit;
 }

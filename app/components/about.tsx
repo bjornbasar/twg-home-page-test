@@ -25,7 +25,7 @@ export default function About() {
             <section className='col-span-5 col-end-11'>
               <section className="word">WASSP, a powerful multi-beam sounder with 120-degree coverage and models for deep exploration, offers unparalleled accuracy, detail, and versatility. Target fish with steerable sounders, generate real-time 3D charts, map fish in water, and make better decisions with the user-friendly advanced mode.</section>
               <section className='mt-6'>
-                <PillButton>Our Story <Image src={rightArrowImage} priority alt='Our Story'/></PillButton>
+                <PillButton height="50px">Our Story <Image src={rightArrowImage} priority alt='Our Story'/></PillButton>
               </section>
             </section>
           </animated.div>

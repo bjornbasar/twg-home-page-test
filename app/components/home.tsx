@@ -46,7 +46,7 @@ export default function HomePage() {
                 <section className='md:col-start-2 md:ml-48 mb-4 md:mb-auto'>
                     <section className='w-48 text-xs md:text-sm'>WASSP multi-beam enables sustainable fishing, exploration, and surveys with versatility and detail.</section>
                 </section>
-                <section className='md:col-end-7'><PillButton>Contact Us <Image src={rightArrowImage} priority alt='Contact us'/></PillButton></section>
+                <section className='md:col-end-7'><PillButton height='50px'>Contact Us <Image src={rightArrowImage} priority alt='Contact us'/></PillButton></section>
             </section>
         </section>
     )
